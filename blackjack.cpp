@@ -110,3 +110,13 @@ bool Card::operator < (Card card) const {
 	return rank < card.rank;
 }
 
+Player::Player(int m){
+	money = m;
+}
+
+int Player::get_money(){
+	return money;
+}
+
+
+

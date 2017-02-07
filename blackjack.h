@@ -2,6 +2,7 @@
 #include <vector>
 #include <fstream>
 
+using std::vector;
 using std::string;
 #ifndef CARDS_H
 #define CARDS_H
@@ -34,15 +35,18 @@ class Hand {
 public:
 	Hand();
 private:
+	vector<string> cardsInHand;
 };
 
 class Player{
 public:
 	Player(int m);
+	int get_money();
 
 private:
 	int money;
 };
+
 
 
 
