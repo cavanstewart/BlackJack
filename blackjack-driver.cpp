@@ -15,8 +15,8 @@ int main(){
 	
 	Player player1(100);
 	
-	int bet == 0;
-	//error ^^
+	int bet = 0;
+
 	char hit = 'y';
 	
 	double playerTotal = 0;
