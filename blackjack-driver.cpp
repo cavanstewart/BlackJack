@@ -11,15 +11,21 @@ using std::cin;
 using std::string;
 
 int main(){
+	
+	
 	Player player1(100);
-	int bet = 0;
-	char hit= 'y';
+	
+	int bet == 0;
+	//error ^^
+	char hit = 'y';
 	
 	double playerTotal = 0;
 	cout << "You have $" << player1.get_money() << ". Enter bet: ";
 	cin >> bet;
+	vector<Card> playerHand;
 	while (hit == 'y'){
 		Card playerCard;
+		playerHand.push_back(playerCard);
 		cout << "Your cards:\n\t" << playerCard.get_spanish_rank() << " de " << playerCard.get_spanish_suit();
 		cout << "\t\t(" << playerCard.get_english_rank() << " of " << playerCard.get_english_suit() << ")";
 		int cardRank = playerCard.get_rank();
